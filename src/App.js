@@ -9,19 +9,19 @@ import Teambuilder from './containers/Teambuilder';
 const routes = [
   {
     name: "首页",
-    path: "home"
+    path: "/home"
   },
   {
     name: "图鉴",
-    path: "pokemondex"
+    path: "/dex"
   },
   {
     name: "队伍编辑",
-    path: "teambuilder"
+    path: "/teambuilder"
   },
   {
     name: "伤害计算",
-    path: "damagecalc"
+    path: "/damagecalc"
   }
 ]
 
@@ -29,18 +29,18 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header style={{border : "2px solid red"}}>
+        <header>
           <HeaderBar routes={routes} />
         </header>
-        <div style={{border : "2px solid red"}}>
+        <div>
           <Switch>
-            <Route exact path="/home" component={Home} />
-            <Route exact path="/pokemondex" component={Pokedex} />
-            <Route exact path="/teambuilder" component={Teambuilder} />
-            <Route exact path="/damagecalc" component={DamageCalc} />
+            <Route  path="/home" component={Home} />
+            <Route  path="/dex" component={Pokedex} />
+            <Route  path="/teambuilder" component={Teambuilder} />
+            <Route  path="/damagecalc" component={DamageCalc} />
           </Switch>
         </div>
-        <footer style={{ border : "2px solid red"}}>Created by JiangHang</footer>
+        <footer>Created by JiangHang</footer>
       </div>
     );
   }
