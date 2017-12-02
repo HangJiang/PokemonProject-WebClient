@@ -5,7 +5,7 @@ class SearchBar extends Component {
     render() {
         return (
             <div style={{height: "100px" , border : "2px solid orange"}}>
-                <button onClick={this.props.changeListOrCard}>切换</button>
+                <button onClick={this.props.changeListOrCard}>{this.props.islist ? "列表显示":"卡片显示"}</button>
                 <div>输入内容搜索</div>
                 <div>过滤 <span>按分级过滤</span> <span>按属性过滤</span> <span>按特性过滤</span></div>
                 <div>排序 <span>按名字排序</span> <span>按种族值排序</span> <span>按编号排序</span></div>

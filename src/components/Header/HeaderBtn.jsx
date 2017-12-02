@@ -1,19 +1,8 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-class HeaderBtn extends Component {
+import React  from 'react';
 
-    handleClick = () => {
-        //this.props.history.push(this.props.path)
-    }
 
-    render() {
-        const { path, name } = this.props;
-        return (
-            <Link to={path}>
-                <button onClick={this.handleClick}>{name}</button>
-            </Link>
-        );
-    }
+const HeaderBtn = ({name}) => {
+    return (<button className="headerButton">{name}</button>);
 }
 
 export default HeaderBtn;

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import HeaderBtn from './HeaderBtn';
+import './Header.css'
+import { Link } from 'react-router-dom';
+
 class HeaderBar extends Component {
     state = {}
     render() {
@@ -7,7 +10,7 @@ class HeaderBar extends Component {
         return (
             <div>
                 {routes.map((item) => {
-                    return <HeaderBtn path={item.path} name={item.name} key={item.path}></HeaderBtn>;
+                    return (<Link to={item.path}><HeaderBtn name={item.name} key={item.path}></HeaderBtn></Link>);
                 })}
             </div>
         );

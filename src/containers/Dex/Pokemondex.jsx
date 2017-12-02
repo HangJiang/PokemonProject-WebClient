@@ -23,7 +23,7 @@ class Pokemondex extends Component {
     render() {
         return (
             <div>
-                <SearchBar changeListOrCard={this.showListOrCard}></SearchBar>
+                <SearchBar changeListOrCard={this.showListOrCard} islist={this.state.islist}></SearchBar>
                 <DexList list={Pokemons} islist={this.state.islist}></DexList>
             </div>
         );
