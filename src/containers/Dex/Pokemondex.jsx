@@ -2,18 +2,7 @@ import React, { Component } from 'react';
 import DexList from '../../components/Dex/DexList'
 import SearchBar from '../../components/Dex/SearchBar';
 
-const Pokemons = [
-    {
-        pmid: 1,
-        dexNo: "1",
-        nameCN: "妙蛙种子"
-    },
-    {
-        pmid: 2,
-        dexNo: "2",
-        nameCN: "妙蛙草"
-    },
-]
+import { Pokemons } from '../../mockdata/pokemons.js';
 
 class Pokemondex extends Component {
     state = {islist : false}

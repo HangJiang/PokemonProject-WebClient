@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import HeaderBtn from './HeaderBtn';
-import './Header.css'
 import { Link } from 'react-router-dom';
 
 class HeaderBar extends Component {
@@ -16,5 +15,4 @@ class HeaderBar extends Component {
         );
     }
 }
-
 export default HeaderBar;
