@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
+import MoveList from "../../components/Moves/MoveList";
+import MovesSearchBar from '../../components/Moves/MovesSearchBar';
+import { Moves } from '../../mockdata/moves.js';
 
 class MoveDex extends Component {
-    state = {  }
+    state = {}
     render() {
         return (
-            <div>Move</div>
+            <div>
+                <MovesSearchBar />
+                <MoveList moves={Moves} />
+            </div>
+
         );
     }
 }

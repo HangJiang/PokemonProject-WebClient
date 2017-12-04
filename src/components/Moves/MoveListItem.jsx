@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class MoveListItem extends Component {
-    state = {  }
-    render() {
-        return (
-            <div>Movelistitem</div>
-        );
-    }
+const MoveListItem = ({move}) => {
+    console.log(move.name)
+    return (
+        <div>{move.name}</div>
+    );
+
 }
 
 export default MoveListItem;
