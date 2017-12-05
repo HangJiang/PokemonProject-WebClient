@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MoveList from "../../components/Moves/MoveList";
-import MovesSearchBar from '../../components/Moves/MovesSearchBar';
+import MoveList from "../../components/Move/MoveList";
+import MovesSearchBar from '../../components/Move/MovesSearchBar';
 import { Moves } from '../../mockdata/moves.js';
 
 class MoveDex extends Component {
